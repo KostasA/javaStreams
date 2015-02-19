@@ -28,4 +28,13 @@ public class FileOrganizer extends JFrame implements ActionListener
         gui.setVisible(true);
     }
     
+    public FileOrganizer()
+    {
+        setSize(WIDTH,HEIGHT);
+        WindowDestroyer listener = new WindowDestroyer();
+        addWindowListener(listener);
+        Container contentPane = getContentPane();
+        contentPane.setLayout(new FlowLayout());
+    }
+    
 }
