@@ -35,10 +35,12 @@ public class FileOrganizer extends JFrame implements ActionListener
         //addWindowListener(listener);
         Container contentPane = getContentPane();
         contentPane.setLayout(new FlowLayout());
+      
         
         JButton showButton = new JButton("Show first line");
         showButton.addActionListener(this);
         contentPane.add(showButton);
+        contentPane.setBackground(Color.red);
         
         JButton removeButton = new JButton("Remove file");
         removeButton.addActionListener(this);
